@@ -61,15 +61,15 @@ export default function Pricing() {
             <h2 
               className="mb-3"
               data-aos="fade-up"
-              style={{ fontSize: '2.5rem', fontWeight: '700', color: '#343F52' }}
+              style={{ fontSize: '0.875rem', fontWeight: '400', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.05em' }}
             >
-              Our Pricing
+              OUR PRICING
             </h2>
             <p 
-              className="text-muted"
+              className="mb-0"
               data-aos="fade-up"
               data-aos-delay="100"
-              style={{ fontSize: '1.125rem', color: '#6c757d' }}
+              style={{ fontSize: '1.75rem', fontWeight: '700',  lineHeight: '1.4' }}
             >
               We offer great prices, premium products and quality service for your business.
             </p>
