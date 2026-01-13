@@ -85,7 +85,7 @@ export default function Solutions() {
                       >
                         <h3 
                           className="mb-2"
-                          style={{ fontSize: '3rem', fontWeight: '700', color: '#1c2539', lineHeight: '1' }}
+                          style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1' }}
                         >
                           85+ Years
                         </h3>
@@ -105,15 +105,15 @@ export default function Solutions() {
                       >
                         <h3 
                           className="mb-2"
-                          style={{ fontSize: '3rem', fontWeight: '700', color: '#1c2539', lineHeight: '1' }}
+                          style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1' }}
                         >
-                          6 Business Verticals
+                          6 Divisions
                         </h3>
                         <p 
                           className="mb-0"
                           style={{ fontSize: '0.95rem', fontWeight: '600', color: '#1c2539', lineHeight: '1.5' }}
                         >
-                          Consumer Goods, Consumer Electronics, Home Automation, Enterprise Technology, Shipping, Travel & Tourism.
+                      Quality solutions across 6 business verticals.
                         </p>
                       </div>
                     </div>
