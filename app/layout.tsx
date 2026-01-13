@@ -13,8 +13,8 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Sandbox - Demo 34",
-  description: "Modern & Multipurpose NextJS Template",
+  title: "Mohamed Abdulrahman Al-Bahar Group",
+  description: "",
 };
 
 export default function RootLayout({
