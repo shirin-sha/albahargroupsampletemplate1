@@ -9,34 +9,16 @@ export default function Hero() {
         {/* Left Side - Image with Play Button (50% of screen) */}
         <div className="col-lg-6" style={{ width: '50%' }}>
           <div className="hero-image-wrapper position-relative w-100 h-100" style={{ minHeight: '600px', backgroundColor: '#f5f5f5' }}>
-            {/* Image Size Indicator */}
-            <div className="position-absolute top-0 start-0 p-3" style={{ backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', borderRadius: '0 0 8px 0', zIndex: 10, fontSize: '0.875rem', fontWeight: '600' }}>
-              Image Size: 960px × 600px (Desktop)<br/>
-              <small style={{ fontSize: '0.75rem', opacity: 0.9 }}>50% width × 600px height</small>
-            </div>
+          
+          
             {/* Add your image here - replace the src with your image path */}
             <img 
-              src="/path-to-your-image.jpg" 
+              src="/hero.jpg" 
               alt="Hero" 
               className="w-100 h-100"
               style={{ objectFit: 'cover' }}
             />
-            
-            {/* Play Button Overlay */}
-            <div className="position-absolute top-50 start-50 translate-middle">
-              <button 
-                className="btn btn-play rounded-circle d-flex align-items-center justify-content-center"
-                style={{
-                  width: '80px',
-                  height: '80px',
-                  backgroundColor: 'rgba(28, 37, 57, 0.8)',
-                  border: 'none',
-                  color: 'white'
-                }}
-              >
-                <FiPlay size={32} style={{ marginLeft: '4px' }} />
-              </button>
-            </div>
+          
           </div>
         </div>
 
