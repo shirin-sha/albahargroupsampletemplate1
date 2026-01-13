@@ -41,11 +41,11 @@ export default function Testimonials() {
           <div className="col-lg-8 mx-auto text-center mb-5">
             <p 
               className="text-uppercase mb-3" 
-              style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '500', color: '#6c757d' }}
+              style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '700', color: '#6c757d', fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif' }}
             >
               Our Capabilities
             </p>
-            <h2 className="mb-0" style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}>
+            <h2 className="mb-0" style={{ fontSize: 'clamp(28px, 5vw, 44px)', fontWeight: '700', color: '#1c2539', lineHeight: '1.25', fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif' }}>
               Core capabilities that power every Al Bahar business
             </h2>
           </div>

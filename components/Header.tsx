@@ -106,7 +106,7 @@ export default function Header() {
                 <li><a className="dropdown-item" href="#">De</a></li>
               </ul>
             </div>
-            <a href="#" className="btn btn-dark rounded-pill px-4">Contact</a>
+            <a href="#" className="btn btn-dark rounded-pill px-4">Profile</a>
           </div>
         </div>
       </div>

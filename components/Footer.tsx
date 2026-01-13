@@ -26,13 +26,13 @@ export default function Footer() {
         {/* CTA Section */}
         <div className="footer-cta-section">
           <div className="row align-items-center">
-            <div className="col-lg-8">
-              <h2 className="footer-cta-heading">
+            <div className="col-12 col-lg-8 mb-3 mb-lg-0">
+              <h2 className="footer-cta-heading" style={{ fontSize: 'clamp(24px, 4vw, 32px)', fontWeight: '700', color: '#1c2539', lineHeight: '1.25', fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif' }}>
                 Partner with us, explore our businesses or discover new career opportunities across our group.
               </h2>
             </div>
-            <div className="col-lg-4 text-lg-end">
-              <a href="/contact-us" className="btn btn-dark btn-lg footer-cta-btn">
+            <div className="col-12 col-lg-4 text-center text-lg-end">
+              <a href="/contact-us" className="btn btn-dark btn-lg footer-cta-btn w-100 w-lg-auto">
                 Contact Our Team
               </a>
             </div>

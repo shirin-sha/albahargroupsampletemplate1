@@ -10,6 +10,7 @@ const processSteps = [
     title: 'Deep Market Understanding',
     description: 'We combine 85+ years in Kuwait with up-to-date category and shopper insights.',
     icon: <FiTarget size={32} />,
+    image: '/process-1.jpg',
     details: {
       content: 'Grounded in Kuwaiti heritage, we understand how customers shop, travel and do business. Our teams track category trends, channel dynamics and competitor activity, helping partners position their brands for long-term relevance and growth.',
       bullets: [
@@ -25,6 +26,7 @@ const processSteps = [
     title: 'Integrated Operations & Capabilities',
     description: 'Shared logistics, excellence and customer care teams support every business vertical.',
     icon: <FiBarChart size={32} />,
+    image: '/process-02.jpg',
     details: {
       content: 'Our businesses are supported by strong group capabilities—Business Excellence, Warehouse & Logistics, Human Capital, Knowledge Capital and Customer Care—ensuring consistent standards and reliable execution across all six verticals.',
       bullets: [
@@ -40,6 +42,7 @@ const processSteps = [
     title: 'Long-Term Partnership Mindset',
     description: 'We focus on sustainable, win-win growth with brands, customers and communities.',
     icon: <FiCheckCircle size={32} />,
+    image: '/process-1.jpg',
     details: {
       content: 'From the first agreement, we plan for the long term. We invest in brand building, joint business planning and transparent reporting, creating relationships that grow stronger year after year.',
       bullets: [
@@ -75,7 +78,7 @@ export default function Process() {
             <p 
               className="text-uppercase mb-3"
               data-aos="fade-up"
-              style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '500', color: '#6c757d' }}
+              style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '700', color: '#6c757d', fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif' }}
             >
               WHY AL BAHAR?
             </p>
@@ -83,7 +86,7 @@ export default function Process() {
               className="mb-0"
               data-aos="fade-up"
               data-aos-delay="100"
-              style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}
+              style={{ fontSize: 'clamp(28px, 5vw, 44px)', fontWeight: '700', color: '#1c2539', lineHeight: '1.25', fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif' }}
             >
               Here are a few reasons partners choose Al Bahar Group.
             </h2>
@@ -167,21 +170,17 @@ export default function Process() {
                     style={{
                       minHeight: '400px',
                       backgroundColor: '#f8f9fa',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center'
+                      overflow: 'hidden'
                     }}
                   >
-                    {/* Image Size Indicator */}
-                    <div className="position-absolute top-0 start-0 p-3" style={{ backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', borderRadius: '0 0 8px 0', zIndex: 10, fontSize: '0.875rem', fontWeight: '600' }}>
-                      Image Size: 480px × 400px<br/>
-                      <small style={{ fontSize: '0.75rem', opacity: 0.9 }}>50% width × 400px height</small>
-                    </div>
-                    {/* Image Placeholder */}
-                    <div className="text-center text-muted p-4">
-                      <p className="mb-0">Image placeholder</p>
-                      <small>Image will be added here</small>
-                    </div>
+                 
+                    {/* Image */}
+                    <img 
+                      src={activeStep.image} 
+                      alt={activeStep.title}
+                      className="w-100 h-100"
+                      style={{ objectFit: 'cover', display: 'block' }}
+                    />
                   </div>
                 </div>
 

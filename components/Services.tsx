@@ -55,11 +55,11 @@ const Services = () => {
             <div className="sticky-left-content">
               <p 
                 className="text-uppercase mb-3"
-                style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '500', color: '#6c757d' }}
+                style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '700', color: '#6c757d', fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif' }}
               >
                 Our Businesses
               </p>
-              <h2 className="services-main-heading mb-4" style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}>
+              <h2 className="services-main-heading mb-4" style={{ fontSize: 'clamp(28px, 5vw, 44px)', fontWeight: '700', color: '#1c2539', lineHeight: '1.25', fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif' }}>
                 The businesses we operate are shaped by Kuwait's needs.
               </h2>
               <p className="services-description mb-4" style={{ fontSize: '1rem', color: '#6c757d', lineHeight: '1.7' }}>

@@ -125,9 +125,9 @@ export default function Features() {
             <div className="features-content-wrapper">
               {/* Subheading */}
               <p 
-                className="text-uppercase text-muted mb-3"
+                className="text-uppercase mb-3"
                 data-aos="fade-up"
-                style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '500', color: '#6c757d' }}
+                style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '700', color: '#6c757d', fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif' }}
               >
                 What Makes Us Different?
               </p>
@@ -137,7 +137,7 @@ export default function Features() {
                 className="mb-5"
                 data-aos="fade-up"
                 data-aos-delay="100"
-                style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}
+                style={{ fontSize: 'clamp(28px, 5vw, 44px)', fontWeight: '700', color: '#1c2539', lineHeight: '1.25', fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif' }}
               >
                 Why partners choose Al Bahar Group
               </h2>

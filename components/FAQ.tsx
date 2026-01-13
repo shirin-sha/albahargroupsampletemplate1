@@ -39,9 +39,9 @@ export default function FAQ() {
         <div className="row">
           <div className="col-lg-8 mx-auto text-center mb-5">
             <p 
-              className="mb-3"
+              className="text-uppercase mb-3"
               data-aos="fade-up"
-              style={{ fontSize: '0.875rem', fontWeight: '500', color: '#6c757d', textTransform: 'uppercase', letterSpacing: '1px' }}
+              style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '700', color: '#6c757d', fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif' }}
             >
               Frequently Asked Questions
             </p>
@@ -49,7 +49,7 @@ export default function FAQ() {
               className="mb-0"
               data-aos="fade-up"
               data-aos-delay="100"
-              style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}
+              style={{ fontSize: 'clamp(28px, 5vw, 44px)', fontWeight: '700', color: '#1c2539', lineHeight: '1.25', fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif' }}
             >
               If you can't find what you need, please contact our team.
             </h2>

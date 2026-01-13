@@ -17,19 +17,15 @@ export default function Solutions() {
     <section className="solutions-section py-5" style={{ backgroundColor: '#fff' }}>
       <div className="row g-0 align-items-stretch">
         {/* Left Side - Image (50% of screen) */}
-        <div className="col-lg-6" style={{ width: '50%' }}>
+        <div className="col-12 col-lg-6">
           <div 
             className="solutions-image-wrapper position-relative w-100 h-100"
-            style={{ minHeight: '600px', backgroundColor: '#f5f5f5' }}
+            style={{ minHeight: '400px', backgroundColor: '#f5f5f5' }}
           >
-            {/* Image Size Indicator */}
-            <div className="position-absolute top-0 start-0 p-3" style={{ backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', borderRadius: '0 0 8px 0', zIndex: 10, fontSize: '0.875rem', fontWeight: '600' }}>
-              Image Size: 960px × 600px (Desktop)<br/>
-              <small style={{ fontSize: '0.75rem', opacity: 0.9 }}>50% width × 600px height</small>
-            </div>
+        
             {/* Add your image here - replace the src with your image path */}
             <img 
-              src="/path-to-your-image.jpg" 
+              src="/solutions.jpg" 
               alt="Solutions" 
               className="w-100 h-100"
               style={{ objectFit: 'cover' }}
@@ -38,19 +34,19 @@ export default function Solutions() {
         </div>
 
         {/* Right Side - Content (50% of screen) */}
-        <div className="col-lg-6" style={{ width: '50%', backgroundColor: '#f8f9fa' }}>
+        <div className="col-12 col-lg-6" style={{ backgroundColor: '#f8f9fa' }}>
           <div className="container h-100">
             <div className="row h-100">
               <div className="col-lg-10 col-xl-8">
                 <div 
-                  className="solutions-content-wrapper d-flex flex-column justify-content-center h-100 py-5 ps-5 ps-lg-6"
-                  style={{ minHeight: '600px' }}
+                  className="solutions-content-wrapper d-flex flex-column justify-content-center h-100 py-4 py-lg-5 ps-4 ps-lg-5 ps-xl-6"
+                  style={{ minHeight: '400px' }}
                 >
                   {/* Subheading */}
                   <p 
-                    className="text-uppercase text-muted mb-3"
+                    className="text-uppercase mb-3"
                     data-aos="fade-up"
-                    style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '500', color: '#6c757d' }}
+                    style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '700', color: '#6c757d', fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif' }}
                   >
                     Our Footprint
                   </p>
@@ -60,7 +56,7 @@ export default function Solutions() {
                     className="mb-4"
                     data-aos="fade-up"
                     data-aos-delay="100"
-                    style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}
+                    style={{ fontSize: 'clamp(28px, 5vw, 44px)', fontWeight: '700', color: '#1c2539', lineHeight: '1.25', fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif' }}
                   >
                     Strong foundations that support every Al Bahar business
                   </h2>
@@ -85,7 +81,7 @@ export default function Solutions() {
                       >
                         <h3 
                           className="mb-2"
-                          style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1' }}
+                          style={{ fontSize: '2rem', fontWeight: '600', color: '#1c2539', lineHeight: '1' }}
                         >
                           85+ Years
                         </h3>
@@ -105,7 +101,7 @@ export default function Solutions() {
                       >
                         <h3 
                           className="mb-2"
-                          style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1' }}
+                          style={{ fontSize: '2rem', fontWeight: '600', color: '#1c2539', lineHeight: '1' }}
                         >
                           6 Divisions
                         </h3>
