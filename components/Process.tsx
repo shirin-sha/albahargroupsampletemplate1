@@ -218,22 +218,7 @@ export default function Process() {
                         </li>
                       ))}
                     </ul>
-                    {activeStep.details.showButton && (
-                      <button 
-                        className="btn mt-auto align-self-start"
-                        style={{ 
-                          backgroundColor: '#1c2539',
-                          color: 'white',
-                          padding: '12px 28px',
-                          fontSize: '0.95rem',
-                          fontWeight: '600',
-                          borderRadius: '6px',
-                          border: 'none'
-                        }}
-                      >
-                        Learn More
-                      </button>
-                    )}
+                 
                   </div>
                 </div>
               </div>
