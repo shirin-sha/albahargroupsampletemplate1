@@ -12,7 +12,7 @@ export default function Header() {
     <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
       <div className="container">
         {/* Logo */}
-        <Link href="/" className="navbar-brand position-relative">
+        <Link href="/" className="navbar-brand position-relative" style={{ marginRight: '1.5rem' }}>
           <Image
             src="/logo.png"
             alt="Logo"
@@ -20,10 +20,11 @@ export default function Header() {
             height={46}
             className="d-inline-block align-top"
             priority
+            style={{ display: 'block' }}
           />
           {/* Image Size Indicator */}
           <div className="position-absolute" style={{ bottom: '-20px', left: '0', backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', padding: '2px 6px', borderRadius: '4px', fontSize: '0.65rem', fontWeight: '600', whiteSpace: 'nowrap', zIndex: 10 }}>
-            250×46px
+            240×46px
           </div>
         </Link>
 
@@ -41,7 +42,7 @@ export default function Header() {
 
         {/* Navigation Menu */}
         <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
-          <ul className="navbar-nav mx-auto">
+          <ul className="navbar-nav mx-auto" style={{ marginLeft: '1rem', marginRight: '1rem' }}>
             <li className="nav-item">
               <Link className="nav-link" href="/">HOME</Link>
             </li>
@@ -51,7 +52,7 @@ export default function Header() {
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
                 BUSINESSES
-                <FiChevronDown className="ms-1" size={14} />
+                <FiChevronDown size={14} style={{ marginLeft: '4px', flexShrink: 0 }} />
               </a>
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="/businesses/consumer-goods">CONSUMER GOODS</a></li>
@@ -65,7 +66,7 @@ export default function Header() {
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
                 CAPABILITIES
-                <FiChevronDown className="ms-1" size={14} />
+                <FiChevronDown size={14} style={{ marginLeft: '4px', flexShrink: 0 }} />
               </a>
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="/capabilities/human-capital">HUMAN CAPITAL</a></li>
@@ -78,7 +79,7 @@ export default function Header() {
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
                 CORPORATE INFO
-                <FiChevronDown className="ms-1" size={14} />
+                <FiChevronDown size={14} style={{ marginLeft: '4px', flexShrink: 0 }} />
               </a>
               <ul className="dropdown-menu">
                 <li><a className="dropdown-item" href="/corporate-info/news-updates">NEWS & UPDATES</a></li>
@@ -92,11 +93,11 @@ export default function Header() {
           </ul>
 
           {/* Right Side - Language Selector & Contact Button */}
-          <div className="d-flex align-items-center gap-3">
+          <div className="d-flex align-items-center ms-auto" style={{ gap: '1.5rem' }}>
             <div className="dropdown">
-              <button className="btn btn-link text-dark text-decoration-none dropdown-toggle p-0 d-flex align-items-center" type="button" data-bs-toggle="dropdown">
-                EN
-                <FiChevronDown className="ms-1" size={14} />
+              <button className="btn btn-link text-dark text-decoration-none dropdown-toggle p-0 d-flex align-items-center" type="button" data-bs-toggle="dropdown" style={{ gap: '4px' }}>
+                <span>EN</span>
+                <FiChevronDown size={14} style={{ flexShrink: 0 }} />
               </button>
               <ul className="dropdown-menu dropdown-menu-end">
                 <li><a className="dropdown-item" href="#">EN</a></li>

@@ -136,6 +136,19 @@ body {
   border-bottom: 1px solid #e9ecef;
   font-family: var(--font-manrope), "Manrope Fallback", sans-serif;
 
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
   .navbar-brand {
     font-size: 1.5rem;
     font-weight: 600;
@@ -146,11 +159,21 @@ body {
 
   .nav-link {
     font-weight: 700;
-    padding: 24px 20px !important;
+    padding: 24px 12px !important;
     color: #1c2539 !important;
     transition: color 0.3s ease;
     font-size: 16px;
     font-family: var(--font-manrope), "Manrope Fallback", sans-serif;
+    white-space: nowrap;
+
+    &.dropdown-toggle {
+      gap: 4px;
+      
+      svg {
+        flex-shrink: 0;
+        margin-left: 4px;
+      }
+    }
 
     &.dropdown-toggle::after {
       display: none;
@@ -163,6 +186,12 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-family: var(--font-manrope), "Manrope Fallback", sans-serif;
+    gap: 4px;
+
+    svg {
+      flex-shrink: 0;
+      margin-left: 4px;
+    }
 
     &:hover {
       color: #1c2539 !important;
