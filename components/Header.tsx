@@ -12,7 +12,7 @@ export default function Header() {
     <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
       <div className="container">
         {/* Logo */}
-        <Link href="/" className="navbar-brand position-relative" style={{ marginRight: '1.5rem' }}>
+        <Link href="#" className="navbar-brand position-relative" style={{ marginRight: '1.5rem' }}>
           <Image
             src="/logo.png"
             alt="Logo"
@@ -44,10 +44,10 @@ export default function Header() {
         <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav mx-auto" style={{ marginLeft: '1rem', marginRight: '1rem' }}>
             <li className="nav-item">
-              <Link className="nav-link" href="/">HOME</Link>
+              <Link className="nav-link" href="#">HOME</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/about-us">ABOUT US</Link>
+              <Link className="nav-link" href="#">ABOUT US</Link>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
@@ -55,12 +55,12 @@ export default function Header() {
                 <FiChevronDown size={14} style={{ marginLeft: '4px', flexShrink: 0 }} />
               </a>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="/businesses/consumer-goods">CONSUMER GOODS</a></li>
-                <li><a className="dropdown-item" href="/businesses/consumer-electronics">CONSUMER ELECTRONICS</a></li>
-                <li><a className="dropdown-item" href="/businesses/home-automation">HOME AUTOMATION</a></li>
-                <li><a className="dropdown-item" href="/businesses/enterprise-technology">ENTERPRISE TECHNOLOGY</a></li>
-                <li><a className="dropdown-item" href="/businesses/shipping">SHIPPING</a></li>
-                <li><a className="dropdown-item" href="/businesses/travel-tourism">TRAVEL & TOURISM</a></li>
+                <li><a className="dropdown-item" href="#">CONSUMER GOODS</a></li>
+                <li><a className="dropdown-item" href="#">CONSUMER ELECTRONICS</a></li>
+                <li><a className="dropdown-item" href="#">HOME AUTOMATION</a></li>
+                <li><a className="dropdown-item" href="#">ENTERPRISE TECHNOLOGY</a></li>
+                <li><a className="dropdown-item" href="#">SHIPPING</a></li>
+                <li><a className="dropdown-item" href="#">TRAVEL & TOURISM</a></li>
               </ul>
             </li>
             <li className="nav-item dropdown">
@@ -69,11 +69,11 @@ export default function Header() {
                 <FiChevronDown size={14} style={{ marginLeft: '4px', flexShrink: 0 }} />
               </a>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="/capabilities/human-capital">HUMAN CAPITAL</a></li>
-                <li><a className="dropdown-item" href="/capabilities/knowledge-capital">KNOWLEDGE CAPITAL</a></li>
-                <li><a className="dropdown-item" href="/capabilities/business-excellence">BUSINESS EXCELLENCE</a></li>
-                <li><a className="dropdown-item" href="/capabilities/warehouse-logistics">WAREHOUSE & LOGISTICS</a></li>
-                <li><a className="dropdown-item" href="/capabilities/customer-care">CUSTOMER CARE</a></li>
+                <li><a className="dropdown-item" href="#">HUMAN CAPITAL</a></li>
+                <li><a className="dropdown-item" href="#">KNOWLEDGE CAPITAL</a></li>
+                <li><a className="dropdown-item" href="#">BUSINESS EXCELLENCE</a></li>
+                <li><a className="dropdown-item" href="#">WAREHOUSE & LOGISTICS</a></li>
+                <li><a className="dropdown-item" href="#">CUSTOMER CARE</a></li>
               </ul>
             </li>
             <li className="nav-item dropdown">
@@ -82,13 +82,13 @@ export default function Header() {
                 <FiChevronDown size={14} style={{ marginLeft: '4px', flexShrink: 0 }} />
               </a>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="/corporate-info/news-updates">NEWS & UPDATES</a></li>
-                <li><a className="dropdown-item" href="/corporate-info/careers">CAREERS</a></li>
-                <li><a className="dropdown-item" href="/corporate-info/partnerships">OUR PARTNERSHIPS</a></li>
+                <li><a className="dropdown-item" href="#">NEWS & UPDATES</a></li>
+                <li><a className="dropdown-item" href="#">CAREERS</a></li>
+                <li><a className="dropdown-item" href="#">OUR PARTNERSHIPS</a></li>
               </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/contact-us">CONTACT US</Link>
+              <Link className="nav-link" href="#">CONTACT US</Link>
             </li>
           </ul>
 
@@ -106,7 +106,7 @@ export default function Header() {
                 <li><a className="dropdown-item" href="#">De</a></li>
               </ul>
             </div>
-            <a href="/contact-us" className="btn btn-dark rounded-pill px-4">Contact</a>
+            <a href="#" className="btn btn-dark rounded-pill px-4">Contact</a>
           </div>
         </div>
       </div>

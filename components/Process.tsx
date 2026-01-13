@@ -7,44 +7,47 @@ import { FiTarget, FiBarChart, FiCheckCircle } from 'react-icons/fi';
 const processSteps = [
   {
     number: '01',
-    title: 'Collect Ideas',
-    description: 'Duis mollis commodo luctus cursus commodo tortor mauris.',
+    title: 'Deep Market Understanding',
+    description: 'We combine 85+ years in Kuwait with up-to-date category and shopper insights.',
     icon: <FiTarget size={32} />,
     details: {
-      content: 'Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna.',
+      content: 'Grounded in Kuwaiti heritage, we understand how customers shop, travel and do business. Our teams track category trends, channel dynamics and competitor activity, helping partners position their brands for long-term relevance and growth.',
       bullets: [
-        'Aenean eu leo quam. Pellentesque ornare.',
-        'Nullam quis risus eget urna mollis ornare.',
-        'Donec id elit non mi porta gravida at eget.'
-      ]
+        'Local insight across modern trade, traditional trade and specialist channels',
+        'Category and shopper understanding informed by real on-ground experience',
+        'Data and feedback loops that turn observations into actionable plans'
+      ],
+      showButton: false
     }
   },
   {
     number: '02',
-    title: 'Data Analysis',
-    description: 'Vivamus sagittis lacus augue fusce dapibus tellus nibh.',
+    title: 'Integrated Operations & Capabilities',
+    description: 'Shared logistics, excellence and customer care teams support every business vertical.',
     icon: <FiBarChart size={32} />,
     details: {
-      content: 'Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna.',
+      content: 'Our businesses are supported by strong group capabilities—Business Excellence, Warehouse & Logistics, Human Capital, Knowledge Capital and Customer Care—ensuring consistent standards and reliable execution across all six verticals.',
       bullets: [
-        'Aenean eu leo quam. Pellentesque ornare.',
-        'Nullam quis risus eget urna mollis ornare.',
-        'Donec id elit non mi porta gravida at eget.'
-      ]
+        'Centralised warehousing and efficient distribution across Kuwait',
+        'Group standards, audits and performance dashboards',
+        'Skilled people and training programs supporting sales and operations'
+      ],
+      showButton: true
     }
   },
   {
     number: '03',
-    title: 'Finalize Product',
-    description: 'Vestibulum ligula porta felis maecenas faucibus mollis.',
+    title: 'Long-Term Partnership Mindset',
+    description: 'We focus on sustainable, win-win growth with brands, customers and communities.',
     icon: <FiCheckCircle size={32} />,
     details: {
-      content: 'Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna.',
+      content: 'From the first agreement, we plan for the long term. We invest in brand building, joint business planning and transparent reporting, creating relationships that grow stronger year after year.',
       bullets: [
-        'Aenean eu leo quam. Pellentesque ornare.',
-        'Nullam quis risus eget urna mollis ornare.',
-        'Donec id elit non mi porta gravida at eget.'
-      ]
+        'Decades-long relationships with leading international brands',
+        'Joint planning and regular performance reviews with partners',
+        'Shared focus on sustainable value for all stakeholders'
+      ],
+      showButton: true
     }
   }
 ];
@@ -74,7 +77,7 @@ export default function Process() {
               data-aos="fade-up"
               style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '500', color: '#6c757d' }}
             >
-              WHY CHOOSE SANDBOX?
+              WHY AL BAHAR?
             </p>
             <h2 
               className="mb-0"
@@ -82,11 +85,7 @@ export default function Process() {
               data-aos-delay="100"
               style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}
             >
-              Here are a few{' '}
-              <span className="text-decoration-underline" style={{ textDecorationColor: '#ff6b35', textDecorationThickness: '3px', textUnderlineOffset: '8px' }}>
-                reasons
-              </span>{' '}
-              why our customers choose Sandbox.
+              Here are a few reasons partners choose Al Bahar Group.
             </h2>
           </div>
         </div>
@@ -219,20 +218,22 @@ export default function Process() {
                         </li>
                       ))}
                     </ul>
-                    <button 
-                      className="btn mt-auto align-self-start"
-                      style={{ 
-                        backgroundColor: '#1c2539',
-                        color: 'white',
-                        padding: '12px 28px',
-                        fontSize: '0.95rem',
-                        fontWeight: '600',
-                        borderRadius: '6px',
-                        border: 'none'
-                      }}
-                    >
-                      Learn More
-                    </button>
+                    {activeStep.details.showButton && (
+                      <button 
+                        className="btn mt-auto align-self-start"
+                        style={{ 
+                          backgroundColor: '#1c2539',
+                          color: 'white',
+                          padding: '12px 28px',
+                          fontSize: '0.95rem',
+                          fontWeight: '600',
+                          borderRadius: '6px',
+                          border: 'none'
+                        }}
+                      >
+                        Learn More
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>

@@ -4,45 +4,45 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      icon: '📈',
-      title: 'Marketing Automation',
-      description: 'Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit.',
-      features: ['Campaign Management', 'Email Marketing', 'Lead Nurturing']
+      icon: '🛒',
+      title: 'Consumer Goods',
+      description: 'We represent leading FMCG and household brands, ensuring strong availability and visibility across Kuwait\'s key retail channels.',
+      features: ['FMCG Distribution', 'Modern Trade', 'Traditional Trade']
     },
     {
       id: 2,
-      icon: '📅',
-      title: 'Project Management',
-      description: 'Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit.',
-      features: ['Task Tracking', 'Team Collaboration', 'Timeline Planning']
+      icon: '📱',
+      title: 'Consumer Electronics',
+      description: 'Home and personal electronics from trusted global innovators, supported by knowledgeable sales teams and reliable after-sales service.',
+      features: ['Home Appliances', 'Personal Devices', 'After-Sales Support']
     },
     {
       id: 3,
-      icon: '📊',
-      title: 'Web Analytics',
-      description: 'Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit.',
-      features: ['Data Insights', 'Performance Metrics', 'Custom Reports']
+      icon: '🏠',
+      title: 'Home Automation',
+      description: 'Smart home solutions that enhance comfort, security and energy efficiency in modern Kuwaiti homes and developments.',
+      features: ['Smart Living', 'Security Solutions', 'Energy Management']
     },
     {
       id: 4,
-      icon: '🔍',
-      title: 'SEO Services',
-      description: 'Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit.',
-      features: ['Keyword Research', 'On-Page SEO', 'Link Building']
+      icon: '💻',
+      title: 'Enterprise Technology',
+      description: 'Integrated IT, print, imaging and AV solutions that help organisations work smarter, protect information and improve productivity.',
+      features: ['IT Solutions', 'Managed Print', 'AV Systems']
     },
     {
       id: 5,
-      icon: '📋',
-      title: 'Market Research',
-      description: 'Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit.',
-      features: ['Consumer Insights', 'Competitive Analysis', 'Trend Analysis']
+      icon: '🚢',
+      title: 'Shipping',
+      description: 'Port agency and shipping services connecting Kuwait to major regional and global trade routes, with reliable coordination end-to-end.',
+      features: ['Port Agency', 'Cargo Handling', 'Trade Lanes']
     },
     {
       id: 6,
-      icon: '📱',
-      title: 'Social Media Management',
-      description: 'Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit.',
-      features: ['Content Creation', 'Community Management', 'Engagement Analytics']
+      icon: '✈️',
+      title: 'Travel & Tourism',
+      description: 'Corporate, leisure and group travel services that combine global networks with personalised local support.',
+      features: ['Corporate Travel', 'Leisure Trips', 'Group Tours']
     }
   ];
 
@@ -57,17 +57,13 @@ const Services = () => {
                 className="text-uppercase mb-3"
                 style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '500', color: '#6c757d' }}
               >
-                WHAT WE DO?
+                Our Businesses
               </p>
               <h2 className="services-main-heading mb-4" style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}>
-                The service we offer is{' '}
-                <span className="text-decoration-underline" style={{ textDecorationColor: '#ff6b35', textDecorationThickness: '3px', textUnderlineOffset: '8px' }}>
-                  specifically
-                </span>{' '}
-                designed to meet your needs.
+                The businesses we operate are shaped by Kuwait's needs.
               </h2>
               <p className="services-description mb-4" style={{ fontSize: '1rem', color: '#6c757d', lineHeight: '1.7' }}>
-                Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                Al Bahar Group manages six specialised divisions that touch everyday life in Kuwait. From essential consumer products and electronics to technology, shipping and travel, each business focuses on delivering trusted solutions for customers and partners.
               </p>
               <div className="services-cta">
                 <a href="#contact" className="btn btn-dark" style={{ padding: '14px 32px', fontSize: '1rem', fontWeight: '600', borderRadius: '6px' }}>

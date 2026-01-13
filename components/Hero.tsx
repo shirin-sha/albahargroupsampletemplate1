@@ -47,14 +47,10 @@ export default function Hero() {
               <div className="col-lg-10 col-xl-8">
                 <div className="hero-content-wrapper d-flex flex-column justify-content-center h-100 py-5 ps-5 ps-lg-6" style={{ minHeight: '600px' }}>
                   <h1 className="hero-headline mb-4" style={{ fontSize: '3rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.2' }}>
-                    We bring solutions to make life{' '}
-                    <span className="text-decoration-underline" style={{ textDecorationColor: '#ff6b35', textDecorationThickness: '3px', textUnderlineOffset: '8px' }}>
-                      easier
-                    </span>{' '}
-                    for our customers.
+                    Connecting Global Brands with Kuwait's Everyday Life
                   </h1>
                   <p className="hero-subheading mb-5" style={{ fontSize: '1.25rem', color: '#6c757d', lineHeight: '1.6' }}>
-                    We have considered our solutions to support every stage of your growth.
+                    We represent leading international brands delivering reliable solutions that serve people, businesses and communities across Kuwait.
                   </p>
                   <button 
                     className="btn btn-hero-cta align-self-start"
@@ -68,7 +64,7 @@ export default function Hero() {
                       border: 'none'
                     }}
                   >
-                    Get Started
+                    Explore Our Businesses
                   </button>
                 </div>
               </div>

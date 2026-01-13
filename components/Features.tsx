@@ -5,20 +5,20 @@ import AOS from 'aos';
 
 const features = [
   {
-    title: 'Creativity',
-    description: 'Curabitur blandit lacus magna ridiculus mus duis mollis.'
+    title: 'Deep Kuwaiti Roots',
+    description: 'Founded in 1937, we combine generations of local experience with a modern, forward-looking mindset that understands how Kuwait lives, shops and does business today.'
   },
   {
-    title: 'Innovative Thinking',
-    description: 'Curabitur blandit lacus magna ridiculus mus duis mollis.'
+    title: 'People & Partnerships First',
+    description: 'Our Human Capital focus and long-term relationships with global brands ensure dedicated teams, shared goals and a partnership approach to every market challenge.'
   },
   {
-    title: 'Rapid Solutions',
-    description: 'Curabitur blandit lacus magna ridiculus mus duis mollis.'
+    title: 'Integrated Group Capabilities',
+    description: 'Business Excellence, Warehouse & Logistics, Knowledge Capital and Customer Care work as one platform, supporting all six business verticals with strong, reliable operations.'
   },
   {
-    title: 'Top-Notch Support',
-    description: 'Curabitur blandit lacus magna ridiculus mus duis mollis.'
+    title: 'Insight-Led Decisions',
+    description: 'We turn data, market feedback and on-ground experience into practical actions—helping brands make better decisions, optimise execution and build sustainable growth.'
   }
 ];
 
@@ -129,7 +129,7 @@ export default function Features() {
                 data-aos="fade-up"
                 style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '500', color: '#6c757d' }}
               >
-                WHAT MAKES US DIFFERENT?
+                What Makes Us Different?
               </p>
 
               {/* Main Heading */}
@@ -139,11 +139,7 @@ export default function Features() {
                 data-aos-delay="100"
                 style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}
               >
-                We bring{' '}
-                <span className="text-decoration-underline" style={{ textDecorationColor: '#ff6b35', textDecorationThickness: '3px', textUnderlineOffset: '8px' }}>
-                  solutions
-                </span>{' '}
-                to make life easier for our customers.
+                Why partners choose Al Bahar Group
               </h2>
 
               {/* Feature List - 2x2 Grid */}

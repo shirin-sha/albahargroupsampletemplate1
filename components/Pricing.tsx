@@ -3,42 +3,39 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 
-const pricingPlans = [
+const serviceCards = [
   {
-    name: 'Basic Plan',
-    price: '$9',
-    period: 'mo',
-    features: [
-      { label: '1', text: 'Project' },
-      { label: '100K', text: 'API Access' },
-      { label: '100MB', text: 'Storage' },
-      { label: 'Weekly', text: 'Reports' },
-      { label: '7/24', text: 'Support' }
-    ]
+    title: 'Global Brand Partners',
+    bullets: [
+      'Market entry and expansion in Kuwait',
+      'Route-to-market and channel strategy',
+      'Brand building and in-store execution',
+      'Transparent performance reviews and reporting',
+      'Long-term, partnership-driven approach'
+    ],
+    buttonText: 'Partner With Us'
   },
   {
-    name: 'Premium Plan',
-    price: '$19',
-    period: 'mo',
-    features: [
-      { label: '5', text: 'Projects' },
-      { label: '100K', text: 'API Access' },
-      { label: '200MB', text: 'Storage' },
-      { label: 'Weekly', text: 'Reports' },
-      { label: '7/24', text: 'Support' }
-    ]
+    title: 'Retailers & Corporate Customers',
+    bullets: [
+      'Reliable product availability across channels',
+      'Dedicated account management teams',
+      'Technical and after-sales support where needed',
+      'Efficient local warehousing and delivery',
+      'Flexible solutions tailored to business needs'
+    ],
+    buttonText: 'Explore Our Solutions'
   },
   {
-    name: 'Corporate Plan',
-    price: '$49',
-    period: 'mo',
-    features: [
-      { label: '20', text: 'Projects' },
-      { label: '300K', text: 'API Access' },
-      { label: '500MB', text: 'Storage' },
-      { label: 'Weekly', text: 'Reports' },
-      { label: '7/24', text: 'Support' }
-    ]
+    title: 'Communities & Talent',
+    bullets: [
+      'Career opportunities across six business verticals',
+      'Training, development and leadership programs',
+      'Safe, inclusive and values-driven workplaces',
+      'Community and social responsibility initiatives',
+      'Focus on sustainable, long-term progress'
+    ],
+    buttonText: 'Discover Opportunities'
   }
 ];
 
@@ -58,27 +55,27 @@ export default function Pricing() {
         {/* Section Header */}
         <div className="row">
           <div className="col-lg-8 mx-auto text-center mb-5">
-            <h2 
+            <p 
               className="mb-3"
               data-aos="fade-up"
-              style={{ fontSize: '0.875rem', fontWeight: '400', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.05em' }}
+              style={{ fontSize: '0.875rem', fontWeight: '500', color: '#6c757d', textTransform: 'uppercase', letterSpacing: '1px' }}
             >
-              OUR PRICING
-            </h2>
-            <p 
+              Who We Serve
+            </p>
+            <h2 
               className="mb-0"
               data-aos="fade-up"
               data-aos-delay="100"
-              style={{ fontSize: '1.75rem', fontWeight: '700',  lineHeight: '1.4' }}
+              style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}
             >
-              We offer great prices, premium products and quality service for your business.
-            </p>
+              Creating value for brands, customers and communities
+            </h2>
           </div>
         </div>
 
-        {/* Pricing Cards */}
+        {/* Service Cards */}
         <div className="row g-4 justify-content-center">
-          {pricingPlans.map((plan, index) => (
+          {serviceCards.map((card, index) => (
             <div key={index} className="col-md-6 col-lg-4">
               <div 
                 className="pricing-card card border-0 shadow-sm h-100"
@@ -87,43 +84,22 @@ export default function Pricing() {
                 style={{ 
                   borderRadius: '12px', 
                   padding: '2.5rem 2rem',
-                  backgroundColor: '#fff'
+                  backgroundColor: '#fff',
+                  display: 'flex',
+                  flexDirection: 'column'
                 }}
               >
-                {/* Price */}
-                <div className="price mb-3 text-center">
-                  <span 
-                    style={{ 
-                      fontSize: '3.5rem', 
-                      fontWeight: '700', 
-                      color: '#1c2539',
-                      lineHeight: '1'
-                    }}
-                  >
-                    {plan.price}
-                  </span>
-                  <span 
-                    style={{ 
-                      fontSize: '1.25rem', 
-                      color: '#6c757d',
-                      marginLeft: '4px'
-                    }}
-                  >
-                    /{plan.period}
-                  </span>
-                </div>
-
-                {/* Plan Name */}
+                {/* Card Title */}
                 <h4 
-                  className="text-center mb-4"
+                  className="mb-4"
                   style={{ fontSize: '1.5rem', fontWeight: '700', color: '#1c2539' }}
                 >
-                  {plan.name}
+                  {card.title}
                 </h4>
 
-                {/* Features List */}
-                <ul className="list-unstyled mb-4">
-                  {plan.features.map((feature, idx) => (
+                {/* Bullets List */}
+                <ul className="list-unstyled mb-4 flex-grow-1">
+                  {card.bullets.map((bullet, idx) => (
                     <li key={idx} className="mb-3 d-flex align-items-start">
                       {/* Checkmark Icon */}
                       <svg
@@ -138,12 +114,7 @@ export default function Pricing() {
                         <path d="M6 10l3 3 5-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
                       </svg>
                       <span style={{ fontSize: '0.95rem', color: '#6c757d', lineHeight: '1.6' }}>
-                        <strong style={{ color: '#1c2539' }}>{feature.label}</strong>{' '}
-                        {feature.text === 'Reports' ? (
-                          <strong style={{ color: '#1c2539' }}>{feature.text}</strong>
-                        ) : (
-                          feature.text
-                        )}
+                        {bullet}
                       </span>
                     </li>
                   ))}
@@ -162,7 +133,7 @@ export default function Pricing() {
                     border: 'none'
                   }}
                 >
-                  Choose Plan
+                  {card.buttonText}
                 </button>
               </div>
             </div>

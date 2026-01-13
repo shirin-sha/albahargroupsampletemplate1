@@ -5,20 +5,20 @@ import AOS from 'aos';
 
 const faqs = [
   {
-    question: 'Can I cancel my subscription?',
-    answer: 'Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod maecenas.'
+    question: 'Which business verticals does Al Bahar Group operate?',
+    answer: 'We operate six verticals: Consumer Goods, Consumer Electronics, Home Automation, Enterprise Technology, Shipping, and Travel & Tourism, all supported by shared group capabilities.'
   },
   {
-    question: 'Which payment methods do you accept?',
-    answer: 'Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod maecenas.'
+    question: 'How can a new brand explore partnership opportunities?',
+    answer: 'You can reach our Business Development team through the Contact Us page. Share your brand details and we will connect you with the most relevant division.'
   },
   {
-    question: 'How can I manage my Account?',
-    answer: 'Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod maecenas.'
+    question: 'Do you provide warehousing and logistics support in Kuwait?',
+    answer: 'Yes. Our Warehouse & Logistics capability manages storage, inventory and distribution across Kuwait for the brands and businesses we represent.'
   },
   {
-    question: 'Is my credit card information secure?',
-    answer: 'Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod maecenas.'
+    question: 'Where can I find current career opportunities?',
+    answer: 'All open roles across our businesses and central functions are listed in the Careers section. You can apply directly through the website or follow the instructions provided.'
   }
 ];
 
@@ -38,21 +38,21 @@ export default function FAQ() {
         {/* Section Header */}
         <div className="row">
           <div className="col-lg-8 mx-auto text-center mb-5">
-            <h2 
+            <p 
               className="mb-3"
               data-aos="fade-up"
-              style={{ fontSize: '0.875rem', fontWeight: '400', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.05em' }}
+              style={{ fontSize: '0.875rem', fontWeight: '500', color: '#6c757d', textTransform: 'uppercase', letterSpacing: '1px' }}
             >
-              FREQUENTLY ASKED QUESTIONS
-            </h2>
-            <p 
+              Frequently Asked Questions
+            </p>
+            <h2 
               className="mb-0"
               data-aos="fade-up"
               data-aos-delay="100"
-              style={{ fontSize: '1.75rem', fontWeight: '700', lineHeight: '1.4' }}
+              style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}
             >
-              If you can't find what you're looking for, please contact our support team.
-            </p>
+              If you can't find what you need, please contact our team.
+            </h2>
           </div>
         </div>
 

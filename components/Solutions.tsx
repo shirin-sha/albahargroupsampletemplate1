@@ -52,7 +52,7 @@ export default function Solutions() {
                     data-aos="fade-up"
                     style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '500', color: '#6c757d' }}
                   >
-                    OUR SOLUTIONS
+                    Our Footprint
                   </p>
 
                   {/* Main Heading */}
@@ -62,11 +62,7 @@ export default function Solutions() {
                     data-aos-delay="100"
                     style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}
                   >
-                    We make your spending{' '}
-                    <span className="text-decoration-underline" style={{ textDecorationColor: '#ff6b35', textDecorationThickness: '3px', textUnderlineOffset: '8px' }}>
-                      stress-free
-                    </span>{' '}
-                    for you to have the perfect control.
+                    Strong foundations that support every Al Bahar business
                   </h2>
 
                   {/* Paragraph */}
@@ -76,9 +72,7 @@ export default function Solutions() {
                     data-aos-delay="200"
                     style={{ fontSize: '1rem', color: '#6c757d', lineHeight: '1.7' }}
                   >
-                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus. 
-                    Maecenas sed diam eget risus varius blandit sit amet non magna.
+                    For more than eight decades, Mohamed Abdulrahman Al-Bahar Group has grown alongside Kuwait's development. Today, our integrated portfolio of businesses and shared group capabilities enables us to serve consumers, enterprises and travellers with reliability, consistency and care.
                   </p>
 
                   {/* Metrics */}
@@ -93,29 +87,14 @@ export default function Solutions() {
                           className="mb-2"
                           style={{ fontSize: '3rem', fontWeight: '700', color: '#1c2539', lineHeight: '1' }}
                         >
-                          99.7%
+                          85+ Years
                         </h3>
                         <p 
-                          className="mb-2"
-                          style={{ fontSize: '0.95rem', fontWeight: '600', color: '#1c2539' }}
+                          className="mb-0"
+                          style={{ fontSize: '0.95rem', fontWeight: '600', color: '#1c2539', lineHeight: '1.5' }}
                         >
-                          Customer Satisfaction
+                          Serving partners, customers and communities in Kuwait.
                         </p>
-                        {/* Stars */}
-                        <div className="d-flex justify-content-center gap-1">
-                          {[...Array(5)].map((_, i) => (
-                            <svg
-                              key={i}
-                              width="16"
-                              height="16"
-                              viewBox="0 0 24 24"
-                              fill="#ff6b35"
-                              style={{ color: '#ff6b35' }}
-                            >
-                              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                            </svg>
-                          ))}
-                        </div>
                       </div>
                     </div>
                     <div className="col-6">
@@ -128,29 +107,14 @@ export default function Solutions() {
                           className="mb-2"
                           style={{ fontSize: '3rem', fontWeight: '700', color: '#1c2539', lineHeight: '1' }}
                         >
-                          4x
+                          6 Business Verticals
                         </h3>
                         <p 
-                          className="mb-2"
-                          style={{ fontSize: '0.95rem', fontWeight: '600', color: '#1c2539' }}
+                          className="mb-0"
+                          style={{ fontSize: '0.95rem', fontWeight: '600', color: '#1c2539', lineHeight: '1.5' }}
                         >
-                          New Visitors
+                          Consumer Goods, Consumer Electronics, Home Automation, Enterprise Technology, Shipping, Travel & Tourism.
                         </p>
-                        {/* Stars */}
-                        <div className="d-flex justify-content-center gap-1">
-                          {[...Array(5)].map((_, i) => (
-                            <svg
-                              key={i}
-                              width="16"
-                              height="16"
-                              viewBox="0 0 24 24"
-                              fill="#ff6b35"
-                              style={{ color: '#ff6b35' }}
-                            >
-                              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                            </svg>
-                          ))}
-                        </div>
                       </div>
                     </div>
                   </div>

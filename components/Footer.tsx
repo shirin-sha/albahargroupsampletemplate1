@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { FiMail, FiPhone, FiMapPin, FiArrowUp } from 'react-icons/fi';
-import { FaTwitter, FaFacebookF, FaDribbble, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import Image from 'next/image';
 
 export default function Footer() {
@@ -28,12 +28,12 @@ export default function Footer() {
           <div className="row align-items-center">
             <div className="col-lg-8">
               <h2 className="footer-cta-heading">
-                Join our community by using our services and grow your business.
+                Partner with us, explore our businesses or discover new career opportunities across our group.
               </h2>
             </div>
             <div className="col-lg-4 text-lg-end">
-              <a href="#contact" className="btn btn-dark btn-lg footer-cta-btn">
-                Try It For Free
+              <a href="/contact-us" className="btn btn-dark btn-lg footer-cta-btn">
+                Contact Our Team
               </a>
             </div>
           </div>
@@ -48,32 +48,28 @@ export default function Footer() {
             {/* Company Info Column */}
             <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
               <div className="footer-company-info">
-                <div className="footer-logo">
+                <div className="footer-logo mb-3">
                   <Image
                     src="/logo.png"
                     alt="Logo"
-                    width={120}
-                    height={40}
+                    width={240}
+                    height={46}
                     className="d-inline-block align-top"
                     priority
                   />
                 </div>
-                <p className="footer-copyright">
-                  © 2022 Sandbox.<br />
-                  All rights reserved.
+                <p className="footer-copyright mb-4" style={{ fontSize: '0.9375rem', color: '#6c757d', lineHeight: '1.6' }}>
+                  Mohamed Abdulrahman Al-Bahar Group is a diversified Kuwaiti business group representing leading global brands in consumer goods, electronics, technology, shipping and travel.
                 </p>
                 <div className="footer-social-icons">
-                  <a href="#" className="social-icon" aria-label="Twitter">
-                    <FaTwitter />
-                  </a>
-                  <a href="#" className="social-icon" aria-label="Facebook">
-                    <FaFacebookF />
-                  </a>
-                  <a href="#" className="social-icon" aria-label="Dribbble">
-                    <FaDribbble />
+                  <a href="#" className="social-icon" aria-label="LinkedIn">
+                    <FaLinkedin />
                   </a>
                   <a href="#" className="social-icon" aria-label="Instagram">
                     <FaInstagram />
+                  </a>
+                  <a href="#" className="social-icon" aria-label="X (Twitter)">
+                    <FaTwitter />
                   </a>
                   <a href="#" className="social-icon" aria-label="YouTube">
                     <FaYoutube />
@@ -87,18 +83,17 @@ export default function Footer() {
               <h5 className="footer-column-heading">Get in Touch</h5>
               <div className="footer-contact-info">
                 <p className="footer-address">
-                  Moonshine St. 14/05<br />
-                  Light City, London,<br />
-                  United Kingdom
+                  Al Bahar Group Headquarters<br />
+                  Kuwait City, State of Kuwait
                 </p>
                 <p className="footer-contact-item">
-                  <a href="mailto:info@email.com" className="footer-link">
-                    info@email.com
+                  <a href="mailto:info@albahargroup.com" className="footer-link">
+                    info@albahargroup.com
                   </a>
                 </p>
                 <p className="footer-contact-item">
-                  <a href="tel:+1234567890" className="footer-link">
-                    00 (123) 456 78 90
+                  <a href="tel:+965XXXXXXXXX" className="footer-link">
+                    +965 XXX XXXX XX
                   </a>
                 </p>
               </div>
@@ -108,11 +103,14 @@ export default function Footer() {
             <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
               <h5 className="footer-column-heading">Learn More</h5>
               <ul className="footer-links-list">
-                <li><a href="#" className="footer-link">About Us</a></li>
-                <li><a href="#" className="footer-link">Our Story</a></li>
-                <li><a href="#" className="footer-link">Projects</a></li>
-                <li><a href="#" className="footer-link">Terms of Use</a></li>
-                <li><a href="#" className="footer-link">Privacy Policy</a></li>
+                <li><a href="/about-us" className="footer-link">About Us</a></li>
+                <li><a href="/businesses" className="footer-link">Our Businesses</a></li>
+                <li><a href="/capabilities" className="footer-link">Capabilities</a></li>
+                <li><a href="/corporate-info" className="footer-link">Corporate Info</a></li>
+                <li><a href="/corporate-info/news-updates" className="footer-link">News & Updates</a></li>
+                <li><a href="/corporate-info/careers" className="footer-link">Careers</a></li>
+                <li><a href="/corporate-info/partnerships" className="footer-link">Our Partnerships</a></li>
+                <li><a href="/contact-us" className="footer-link">Contact Us</a></li>
               </ul>
             </div>
 
@@ -120,7 +118,7 @@ export default function Footer() {
             <div className="col-lg-3 col-md-6">
               <h5 className="footer-column-heading">Our Newsletter</h5>
               <p className="footer-newsletter-desc">
-                Subscribe to our newsletter to get our news & deals delivered to you.
+                Subscribe to receive updates on our businesses, partnerships, community initiatives and career opportunities.
               </p>
               <form className="footer-newsletter-form">
                 <input 
@@ -133,6 +131,15 @@ export default function Footer() {
                 </button>
               </form>
             </div>
+          </div>
+        </div>
+
+        {/* Copyright Section */}
+        <div className="row mt-4 pt-4 border-top">
+          <div className="col-12 text-center">
+            <p className="mb-0" style={{ fontSize: '0.875rem', color: '#6c757d' }}>
+              © 2026 Mohamed Abdulrahman Al-Bahar Group. All rights reserved.
+            </p>
           </div>
         </div>
       </div>

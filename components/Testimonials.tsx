@@ -1,36 +1,35 @@
 'use client';
 
-
-const testimonials = [
+const capabilities = [
   {
-    quote: "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.",
-    name: "Coriss Ambady",
-    role: "Financial Analyst"
+    id: 1,
+    title: 'Human Capital',
+    text: 'We invest in developing our people through structured learning, leadership programs and clear career paths, creating strong teams across every division.'
   },
   {
-    quote: "Fusce dapibus, tellus ac cursus tortor mauris condimentum fermentum massa justo sit amet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.",
-    name: "Cory Zamora",
-    role: "Marketing Specialist"
+    id: 2,
+    title: 'Knowledge Capital',
+    text: 'Market data, category insights and field feedback are collected and shared across the Group to support smarter, faster decisions.'
   },
   {
-    quote: "Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget porta ac consectetur vestibulum. Donec sed odio dui consectetur adipiscing elit.",
-    name: "Nikolas Brooten",
-    role: "Sales Manager"
+    id: 3,
+    title: 'Business Excellence',
+    text: 'Group-wide standards, performance dashboards and continuous improvement initiatives help us operate with discipline, transparency and consistent quality.'
   },
   {
-    quote: "Etiam adipiscing tincidunt elit convallis felis suscipit ut. Phasellus rhoncus tincidunt auctor. Nullam eu sagittis mauris. Donec non dolor ac elit aliquam tincidunt at at sapien. Aenean tortor libero condimentum ac laoreet vitae.",
-    name: "Coriss Ambady",
-    role: "Financial Analyst"
+    id: 4,
+    title: 'Warehouse & Logistics',
+    text: 'Centralised warehousing, inventory management and transport planning ensure products move efficiently from port and supplier to customer.'
   },
   {
-    quote: "Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-    name: "Laura Widerski",
-    role: "Sales Specialist"
+    id: 5,
+    title: 'Customer Care',
+    text: 'Dedicated teams and clear service channels support retailers, corporate clients and travellers, resolving issues quickly and building trust.'
   },
   {
-    quote: "Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus magnis dis montes, nascetur ridiculus mus. Donec sed odio dui. Nulla vitae elit libero a pharetra.",
-    name: "Jackie Sanders",
-    role: "Investment Planner"
+    id: 6,
+    title: 'Integrated Group Support',
+    text: 'These capabilities work together as one platform, allowing all six business verticals to focus on growth while relying on strong shared foundations.'
   }
 ];
 
@@ -44,107 +43,32 @@ export default function Testimonials() {
               className="text-uppercase mb-3" 
               style={{ fontSize: '0.875rem', letterSpacing: '1px', fontWeight: '500', color: '#6c757d' }}
             >
-              HAPPY CUSTOMERS
+              Our Capabilities
             </p>
             <h2 className="mb-0" style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}>
-              Don't take our word for it. See what{' '}
-              <span className="text-decoration-underline" style={{ textDecorationColor: '#ff6b35', textDecorationThickness: '3px', textUnderlineOffset: '8px' }}>
-                customers
-              </span>{' '}
-              are saying about us.
+              Core capabilities that power every Al Bahar business
             </h2>
           </div>
         </div>
         <div className="row g-4">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="col-md-6 col-lg-4">
+          {capabilities.map((capability) => (
+            <div key={capability.id} className="col-md-6 col-lg-4">
               <div className="testimonial-card-wrapper">
-                <div className="testimonial-card card border-0 shadow-sm text-start p-4" style={{ borderRadius: '12px', minHeight: '320px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                  {/* Stars Rating */}
-                  <div className="stars-rating mb-3 d-flex justify-content-start gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <svg
-                        key={i}
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="#ffc107"
-                        style={{ color: '#ffc107' }}
-                      >
-                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                      </svg>
-                    ))}
-                  </div>
-
-                  {/* Quote with Decorative Quotation Marks */}
-                  <div className="quote-wrapper position-relative mb-4" style={{ flex: '1', display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-start', padding: '1rem 0' }}>
-                    {/* Large decorative quotation marks */}
-                    <div 
-                      className="quote-marks position-absolute"
-                      style={{
-                        fontSize: '140px',
-                        color: '#e9ecef',
-                        fontWeight: '300',
-                        lineHeight: '1',
-                        zIndex: 0,
-                        fontFamily: 'Georgia, serif',
-                        top: '-20px',
-                        left: '0',
-                        opacity: 0.5
-                      }}
-                    >
-                      "
-                    </div>
-                    <p 
-                      className="quote-text position-relative mb-0"
-                      style={{
-                        fontSize: '1.125rem',
-                        color: '#1c2539',
-                        lineHeight: '1.7',
-                        zIndex: 1,
-                        fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif',
-                        padding: '0 1rem',
-                        textAlign: 'left'
-                      }}
-                    >
-                      {testimonial.quote}
-                    </p>
-                  </div>
-
-                  {/* Author Information */}
-                  <div className="author-info d-flex align-items-center justify-content-start gap-3">
-                    {/* Profile Picture Placeholder */}
-                    <div 
-                      className="profile-picture position-relative"
-                      style={{
-                        width: '60px',
-                        height: '60px',
-                        borderRadius: '50%',
-                        backgroundColor: '#f8f9fa',
-                        border: '2px solid #e9ecef',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        flexShrink: 0
-                      }}
-                    >
-                      {/* Image Size Indicator */}
-                      <div className="position-absolute" style={{ bottom: '-25px', left: '50%', transform: 'translateX(-50%)', backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', padding: '2px 6px', borderRadius: '4px', fontSize: '0.65rem', fontWeight: '600', whiteSpace: 'nowrap', zIndex: 10 }}>
-                        60×60px
-                      </div>
-                      <span className="text-muted" style={{ fontSize: '0.75rem' }}>Photo</span>
-                    </div>
-                    
-                    {/* Name and Title */}
-                    <div className="author-details text-start">
-                      <h5 className="mb-1" style={{ fontSize: '1rem', fontWeight: '700', color: '#1c2539', margin: 0 }}>
-                        {testimonial.name}
-                      </h5>
-                      <p className="mb-0" style={{ fontSize: '0.875rem', color: '#6c757d', margin: 0 }}>
-                        {testimonial.role}
-                      </p>
-                    </div>
-                  </div>
+                <div className="testimonial-card card border-0 shadow-sm text-start p-4" style={{ borderRadius: '12px', minHeight: '280px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start' }}>
+                  <h4 className="mb-3" style={{ fontSize: '1.25rem', fontWeight: '700', color: '#1c2539', marginBottom: '1rem' }}>
+                    {capability.title}
+                  </h4>
+                  <p 
+                    className="mb-0"
+                    style={{
+                      fontSize: '1rem',
+                      color: '#6c757d',
+                      lineHeight: '1.7',
+                      fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif'
+                    }}
+                  >
+                    {capability.text}
+                  </p>
                 </div>
               </div>
             </div>
