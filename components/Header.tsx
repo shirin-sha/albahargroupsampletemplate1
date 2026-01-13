@@ -22,10 +22,7 @@ export default function Header() {
             priority
             style={{ display: 'block' }}
           />
-          {/* Image Size Indicator */}
-          <div className="position-absolute" style={{ bottom: '-20px', left: '0', backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', padding: '2px 6px', borderRadius: '4px', fontSize: '0.65rem', fontWeight: '600', whiteSpace: 'nowrap', zIndex: 10 }}>
-            240×46px
-          </div>
+        
         </Link>
 
         {/* Mobile Toggle */}
