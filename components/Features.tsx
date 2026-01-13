@@ -45,23 +45,19 @@ export default function Features() {
                 data-aos="fade-right"
                 style={{
                   width: '100%',
-                  minHeight: '300px',
+                  minHeight: '200px',
                   backgroundColor: '#f8f9fa',
                   borderRadius: '12px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
                   overflow: 'hidden'
                 }}
               >
-                {/* Image Size Indicator */}
-                <div className="position-absolute top-0 start-0 p-2" style={{ backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', borderRadius: '0 0 8px 0', zIndex: 10, fontSize: '0.75rem', fontWeight: '600' }}>
-                  Image: 540px × 300px
-                </div>
-                <div className="text-center text-muted p-4">
-                  <p className="mb-0">Large Image</p>
-                  <small>Image will be added here</small>
-                </div>
+                {/* Replace '/features-large.jpg' with your image path */}
+                <img 
+                  src="/features-large.jpg" 
+                  alt="Features"
+                  className="w-100 h-100"
+                  style={{ objectFit: 'cover', height: '100%', width: '100%' }}
+                />
               </div>
 
               {/* Bottom Two Smaller Images */}
@@ -76,19 +72,16 @@ export default function Features() {
                       minHeight: '200px',
                       backgroundColor: '#f8f9fa',
                       borderRadius: '12px',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
                       overflow: 'hidden'
                     }}
                   >
-                    {/* Image Size Indicator */}
-                    <div className="position-absolute top-0 start-0 p-2" style={{ backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', borderRadius: '0 0 8px 0', zIndex: 10, fontSize: '0.7rem', fontWeight: '600' }}>
-                      Image: 255px × 200px
-                    </div>
-                    <div className="text-center text-muted p-3">
-                      <p className="mb-0" style={{ fontSize: '0.875rem' }}>Small Image 1</p>
-                    </div>
+                    {/* Replace '/features-small-1.jpg' with your image path */}
+                    <img 
+                      src="/features-small-1.jpg" 
+                      alt="Features"
+                      className="w-100 h-100"
+                      style={{ objectFit: 'cover', height: '100%', width: '100%' }}
+                    />
                   </div>
                 </div>
                 <div className="col-6">
@@ -101,19 +94,16 @@ export default function Features() {
                       minHeight: '200px',
                       backgroundColor: '#f8f9fa',
                       borderRadius: '12px',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
                       overflow: 'hidden'
                     }}
                   >
-                    {/* Image Size Indicator */}
-                    <div className="position-absolute top-0 start-0 p-2" style={{ backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', borderRadius: '0 0 8px 0', zIndex: 10, fontSize: '0.7rem', fontWeight: '600' }}>
-                      Image: 255px × 200px
-                    </div>
-                    <div className="text-center text-muted p-3">
-                      <p className="mb-0" style={{ fontSize: '0.875rem' }}>Small Image 2</p>
-                    </div>
+                    {/* Replace '/features-small-2.jpg' with your image path */}
+                    <img 
+                      src="/features-small-2.jpg" 
+                      alt="Features"
+                      className="w-100 h-100"
+                      style={{ objectFit: 'cover', height: '100%', width: '100%' }}
+                    />
                   </div>
                 </div>
               </div>
