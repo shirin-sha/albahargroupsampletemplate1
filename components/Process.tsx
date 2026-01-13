@@ -23,8 +23,8 @@ const processSteps = [
   },
   {
     number: '02',
-    title: 'Integrated Operations & Capabilities',
-    description: 'Shared logistics, excellence and customer care teams support every business vertical.',
+    title: 'Integrated Operations',
+    description: 'Shared logistics, excellence and customer care support every business vertical.',
     icon: <FiBarChart size={32} />,
     image: '/process-02.jpg',
     details: {
@@ -39,7 +39,7 @@ const processSteps = [
   },
   {
     number: '03',
-    title: 'Long-Term Partnership Mindset',
+    title: 'Long-Term Partnership',
     description: 'We focus on sustainable, win-win growth with brands, customers and communities.',
     icon: <FiCheckCircle size={32} />,
     image: '/process-1.jpg',
