@@ -46,7 +46,7 @@ export default function Testimonials() {
             >
               HAPPY CUSTOMERS
             </p>
-            <h2 className="mb-0" style={{ fontSize: '2.5rem', fontWeight: '700', color: '#343F52', lineHeight: '1.3' }}>
+            <h2 className="mb-0" style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}>
               Don't take our word for it. See what{' '}
               <span className="text-decoration-underline" style={{ textDecorationColor: '#ff6b35', textDecorationThickness: '3px', textUnderlineOffset: '8px' }}>
                 customers
@@ -99,7 +99,7 @@ export default function Testimonials() {
                       className="quote-text position-relative mb-0"
                       style={{
                         fontSize: '1.125rem',
-                        color: '#343F52',
+                        color: '#1c2539',
                         lineHeight: '1.7',
                         zIndex: 1,
                         fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif',
@@ -115,7 +115,7 @@ export default function Testimonials() {
                   <div className="author-info d-flex align-items-center justify-content-start gap-3">
                     {/* Profile Picture Placeholder */}
                     <div 
-                      className="profile-picture"
+                      className="profile-picture position-relative"
                       style={{
                         width: '60px',
                         height: '60px',
@@ -128,12 +128,16 @@ export default function Testimonials() {
                         flexShrink: 0
                       }}
                     >
+                      {/* Image Size Indicator */}
+                      <div className="position-absolute" style={{ bottom: '-25px', left: '50%', transform: 'translateX(-50%)', backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', padding: '2px 6px', borderRadius: '4px', fontSize: '0.65rem', fontWeight: '600', whiteSpace: 'nowrap', zIndex: 10 }}>
+                        60×60px
+                      </div>
                       <span className="text-muted" style={{ fontSize: '0.75rem' }}>Photo</span>
                     </div>
                     
                     {/* Name and Title */}
                     <div className="author-details text-start">
-                      <h5 className="mb-1" style={{ fontSize: '1rem', fontWeight: '700', color: '#343F52', margin: 0 }}>
+                      <h5 className="mb-1" style={{ fontSize: '1rem', fontWeight: '700', color: '#1c2539', margin: 0 }}>
                         {testimonial.name}
                       </h5>
                       <p className="mb-0" style={{ fontSize: '0.875rem', color: '#6c757d', margin: 0 }}>

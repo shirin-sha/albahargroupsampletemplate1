@@ -72,7 +72,7 @@ export default function FAQ() {
                     width: '48px',
                     height: '48px',
                     borderRadius: '50%',
-                    backgroundColor: '#343F52',
+                    backgroundColor: '#1c2539',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -98,7 +98,7 @@ export default function FAQ() {
                     style={{ 
                       fontSize: '1.25rem', 
                       fontWeight: '700', 
-                      color: '#343F52',
+                      color: '#1c2539',
                       lineHeight: '1.3'
                     }}
                   >

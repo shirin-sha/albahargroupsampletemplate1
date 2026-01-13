@@ -9,6 +9,11 @@ export default function Hero() {
         {/* Left Side - Image with Play Button (50% of screen) */}
         <div className="col-lg-6" style={{ width: '50%' }}>
           <div className="hero-image-wrapper position-relative w-100 h-100" style={{ minHeight: '600px', backgroundColor: '#f5f5f5' }}>
+            {/* Image Size Indicator */}
+            <div className="position-absolute top-0 start-0 p-3" style={{ backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', borderRadius: '0 0 8px 0', zIndex: 10, fontSize: '0.875rem', fontWeight: '600' }}>
+              Image Size: 960px × 600px (Desktop)<br/>
+              <small style={{ fontSize: '0.75rem', opacity: 0.9 }}>50% width × 600px height</small>
+            </div>
             {/* Add your image here - replace the src with your image path */}
             <img 
               src="/path-to-your-image.jpg" 
@@ -24,7 +29,7 @@ export default function Hero() {
                 style={{
                   width: '80px',
                   height: '80px',
-                  backgroundColor: 'rgba(52, 63, 82, 0.8)',
+                  backgroundColor: 'rgba(28, 37, 57, 0.8)',
                   border: 'none',
                   color: 'white'
                 }}
@@ -41,7 +46,7 @@ export default function Hero() {
             <div className="row h-100">
               <div className="col-lg-10 col-xl-8">
                 <div className="hero-content-wrapper d-flex flex-column justify-content-center h-100 py-5 ps-5 ps-lg-6" style={{ minHeight: '600px' }}>
-                  <h1 className="hero-headline mb-4" style={{ fontSize: '3rem', fontWeight: '700', color: '#343F52', lineHeight: '1.2' }}>
+                  <h1 className="hero-headline mb-4" style={{ fontSize: '3rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.2' }}>
                     We bring solutions to make life{' '}
                     <span className="text-decoration-underline" style={{ textDecorationColor: '#ff6b35', textDecorationThickness: '3px', textUnderlineOffset: '8px' }}>
                       easier
@@ -54,7 +59,7 @@ export default function Hero() {
                   <button 
                     className="btn btn-hero-cta align-self-start"
                     style={{
-                      backgroundColor: '#343F52',
+                      backgroundColor: '#1c2539',
                       color: 'white',
                       padding: '14px 32px',
                       fontSize: '1rem',

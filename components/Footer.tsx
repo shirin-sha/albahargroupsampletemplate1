@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { FiMail, FiPhone, FiMapPin, FiArrowUp } from 'react-icons/fi';
 import { FaTwitter, FaFacebookF, FaDribbble, FaInstagram, FaYoutube } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -48,8 +49,14 @@ export default function Footer() {
             <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
               <div className="footer-company-info">
                 <div className="footer-logo">
-                  <span className="footer-logo-icon">□</span>
-                  <span className="footer-logo-text">Sandbox</span>
+                  <Image
+                    src="/logo.png"
+                    alt="Logo"
+                    width={120}
+                    height={40}
+                    className="d-inline-block align-top"
+                    priority
+                  />
                 </div>
                 <p className="footer-copyright">
                   © 2022 Sandbox.<br />

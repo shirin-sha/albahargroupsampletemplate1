@@ -59,7 +59,7 @@ const Services = () => {
               >
                 WHAT WE DO?
               </p>
-              <h2 className="services-main-heading mb-4" style={{ fontSize: '2.5rem', fontWeight: '700', color: '#343F52', lineHeight: '1.3' }}>
+              <h2 className="services-main-heading mb-4" style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}>
                 The service we offer is{' '}
                 <span className="text-decoration-underline" style={{ textDecorationColor: '#ff6b35', textDecorationThickness: '3px', textUnderlineOffset: '8px' }}>
                   specifically

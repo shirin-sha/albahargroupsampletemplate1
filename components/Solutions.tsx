@@ -22,6 +22,11 @@ export default function Solutions() {
             className="solutions-image-wrapper position-relative w-100 h-100"
             style={{ minHeight: '600px', backgroundColor: '#f5f5f5' }}
           >
+            {/* Image Size Indicator */}
+            <div className="position-absolute top-0 start-0 p-3" style={{ backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', borderRadius: '0 0 8px 0', zIndex: 10, fontSize: '0.875rem', fontWeight: '600' }}>
+              Image Size: 960px × 600px (Desktop)<br/>
+              <small style={{ fontSize: '0.75rem', opacity: 0.9 }}>50% width × 600px height</small>
+            </div>
             {/* Add your image here - replace the src with your image path */}
             <img 
               src="/path-to-your-image.jpg" 
@@ -55,7 +60,7 @@ export default function Solutions() {
                     className="mb-4"
                     data-aos="fade-up"
                     data-aos-delay="100"
-                    style={{ fontSize: '2.5rem', fontWeight: '700', color: '#343F52', lineHeight: '1.3' }}
+                    style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}
                   >
                     We make your spending{' '}
                     <span className="text-decoration-underline" style={{ textDecorationColor: '#ff6b35', textDecorationThickness: '3px', textUnderlineOffset: '8px' }}>
@@ -86,13 +91,13 @@ export default function Solutions() {
                       >
                         <h3 
                           className="mb-2"
-                          style={{ fontSize: '3rem', fontWeight: '700', color: '#343F52', lineHeight: '1' }}
+                          style={{ fontSize: '3rem', fontWeight: '700', color: '#1c2539', lineHeight: '1' }}
                         >
                           99.7%
                         </h3>
                         <p 
                           className="mb-2"
-                          style={{ fontSize: '0.95rem', fontWeight: '600', color: '#343F52' }}
+                          style={{ fontSize: '0.95rem', fontWeight: '600', color: '#1c2539' }}
                         >
                           Customer Satisfaction
                         </p>
@@ -121,13 +126,13 @@ export default function Solutions() {
                       >
                         <h3 
                           className="mb-2"
-                          style={{ fontSize: '3rem', fontWeight: '700', color: '#343F52', lineHeight: '1' }}
+                          style={{ fontSize: '3rem', fontWeight: '700', color: '#1c2539', lineHeight: '1' }}
                         >
                           4x
                         </h3>
                         <p 
                           className="mb-2"
-                          style={{ fontSize: '0.95rem', fontWeight: '600', color: '#343F52' }}
+                          style={{ fontSize: '0.95rem', fontWeight: '600', color: '#1c2539' }}
                         >
                           New Visitors
                         </p>

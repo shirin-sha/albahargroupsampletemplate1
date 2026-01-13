@@ -4,7 +4,7 @@
 // Global styles
 body {
   font-family: var(--font-manrope), "Manrope Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #212529;
+  color: #1c2539;
   line-height: 1.5;
 }
 
@@ -139,7 +139,7 @@ body {
   .navbar-brand {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #212529;
+    color: #1c2539;
     text-decoration: none;
     font-family: var(--font-manrope), "Manrope Fallback", sans-serif;
   }
@@ -147,7 +147,7 @@ body {
   .nav-link {
     font-weight: 700;
     padding: 24px 20px !important;
-    color: #343F52 !important;
+    color: #1c2539 !important;
     transition: color 0.3s ease;
     font-size: 16px;
     font-family: var(--font-manrope), "Manrope Fallback", sans-serif;
@@ -159,13 +159,13 @@ body {
 
   .btn-link {
     font-weight: 700;
-    color: #343F52 !important;
+    color: #1c2539 !important;
     text-decoration: none;
     font-size: 16px;
     font-family: var(--font-manrope), "Manrope Fallback", sans-serif;
 
     &:hover {
-      color: #343F52 !important;
+      color: #1c2539 !important;
     }
 
     &.dropdown-toggle::after {
@@ -174,8 +174,8 @@ body {
   }
 
   .btn-dark {
-    background-color: #212529;
-    border-color: #212529;
+    background-color: #1c2539;
+    border-color: #1c2539;
     font-weight: 500;
     font-size: 0.9rem;
     padding: 0.5rem 1.5rem;
@@ -227,7 +227,7 @@ body {
 
     &:hover {
       transform: scale(1.1);
-      background-color: rgba(52, 63, 82, 0.9) !important;
+      background-color: rgba(28, 37, 57, 0.9) !important;
     }
   }
 
@@ -236,9 +236,9 @@ body {
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: #212529 !important;
+      background-color: #1c2539 !important;
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(52, 63, 82, 0.3);
+      box-shadow: 0 4px 12px rgba(28, 37, 57, 0.3);
     }
   }
 
@@ -493,7 +493,7 @@ body {
     .services-main-heading {
       font-size: 3rem;
       font-weight: 700;
-      color: #212529;
+      color: #1c2539;
       margin-bottom: 24px;
       line-height: 1.2;
     }
@@ -561,7 +561,7 @@ body {
   .service-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #212529;
+    color: #1c2539;
     margin-bottom: 12px;
   }
 
@@ -636,7 +636,7 @@ body {
 // Custom Footer Styles (Light Theme)
 .custom-footer {
   background-color: #f8f9fa;
-  color: #212529;
+  color: #1c2539;
   padding: 60px 0 40px;
   position: relative;
 
@@ -646,13 +646,13 @@ body {
     .footer-cta-heading {
       font-size: 2rem;
       font-weight: 700;
-      color: #212529;
+      color: #1c2539;
       margin: 0;
       line-height: 1.3;
     }
 
     .footer-cta-btn {
-      background-color: #212529;
+      background-color: #1c2539;
       color: white;
       border: none;
       padding: 12px 32px;
@@ -678,7 +678,7 @@ body {
     .footer-column-heading {
       font-size: 1.125rem;
       font-weight: 700;
-      color: #212529;
+      color: #1c2539;
       margin-bottom: 24px;
     }
   }
@@ -693,13 +693,13 @@ body {
       .footer-logo-icon {
         font-size: 1.5rem;
         font-weight: 700;
-        color: #212529;
+        color: #1c2539;
       }
 
       .footer-logo-text {
         font-size: 1.75rem;
         font-weight: 700;
-        color: #212529;
+        color: #1c2539;
       }
     }
 
@@ -721,7 +721,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #212529;
+        color: #1c2539;
         font-size: 1.125rem;
         text-decoration: none;
         transition: all 0.3s ease;
@@ -760,7 +760,7 @@ body {
     font-size: 0.9375rem;
 
     &:hover {
-      color: #212529;
+      color: #1c2539;
     }
   }
 
@@ -798,12 +798,12 @@ body {
       border-radius: 6px;
       font-size: 0.9375rem;
       background-color: white;
-      color: #212529;
+      color: #1c2539;
 
       &:focus {
         outline: none;
-        border-color: #212529;
-        box-shadow: 0 0 0 3px rgba(33, 37, 41, 0.1);
+        border-color: #1c2539;
+        box-shadow: 0 0 0 3px rgba(28, 37, 57, 0.1);
       }
 
       &::placeholder {
@@ -812,7 +812,7 @@ body {
     }
 
     .footer-newsletter-btn {
-      background-color: #212529;
+      background-color: #1c2539;
       color: white;
       border: none;
       padding: 12px 24px;
@@ -838,7 +838,7 @@ body {
     border-radius: 50%;
     background-color: #e9ecef;
     border: none;
-    color: #212529;
+    color: #1c2539;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -80,7 +80,7 @@ export default function Process() {
               className="mb-0"
               data-aos="fade-up"
               data-aos-delay="100"
-              style={{ fontSize: '2.5rem', fontWeight: '700', color: '#343F52', lineHeight: '1.3' }}
+              style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}
             >
               Here are a few{' '}
               <span className="text-decoration-underline" style={{ textDecorationColor: '#ff6b35', textDecorationThickness: '3px', textUnderlineOffset: '8px' }}>
@@ -118,7 +118,7 @@ export default function Process() {
                       style={{ 
                         fontSize: '3rem', 
                         fontWeight: '700', 
-                        color: '#343F52',
+                        color: '#1c2539',
                         lineHeight: '1',
                         fontFamily: 'var(--font-manrope), "Manrope Fallback", sans-serif'
                       }}
@@ -128,7 +128,7 @@ export default function Process() {
                     <div>
                       <h4 
                         className="mb-2"
-                        style={{ fontSize: '1.25rem', fontWeight: '700', color: '#343F52' }}
+                        style={{ fontSize: '1.25rem', fontWeight: '700', color: '#1c2539' }}
                       >
                         {step.title}
                       </h4>
@@ -164,7 +164,7 @@ export default function Process() {
                 {/* Left Column - Image */}
                 <div className="col-md-6">
                   <div 
-                    className="process-image-wrapper h-100"
+                    className="process-image-wrapper h-100 position-relative"
                     style={{
                       minHeight: '400px',
                       backgroundColor: '#f8f9fa',
@@ -173,6 +173,11 @@ export default function Process() {
                       justifyContent: 'center'
                     }}
                   >
+                    {/* Image Size Indicator */}
+                    <div className="position-absolute top-0 start-0 p-3" style={{ backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', borderRadius: '0 0 8px 0', zIndex: 10, fontSize: '0.875rem', fontWeight: '600' }}>
+                      Image Size: 480px × 400px<br/>
+                      <small style={{ fontSize: '0.75rem', opacity: 0.9 }}>50% width × 400px height</small>
+                    </div>
                     {/* Image Placeholder */}
                     <div className="text-center text-muted p-4">
                       <p className="mb-0">Image placeholder</p>
@@ -186,7 +191,7 @@ export default function Process() {
                   <div className="p-4 p-md-5 h-100 d-flex flex-column">
                     <h3 
                       className="mb-4"
-                      style={{ fontSize: '2rem', fontWeight: '700', color: '#343F52' }}
+                      style={{ fontSize: '2rem', fontWeight: '700', color: '#1c2539' }}
                     >
                       {activeStep.title}
                     </h3>
@@ -217,7 +222,7 @@ export default function Process() {
                     <button 
                       className="btn mt-auto align-self-start"
                       style={{ 
-                        backgroundColor: '#343F52',
+                        backgroundColor: '#1c2539',
                         color: 'white',
                         padding: '12px 28px',
                         fontSize: '0.95rem',

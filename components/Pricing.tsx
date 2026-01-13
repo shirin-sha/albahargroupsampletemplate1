@@ -96,7 +96,7 @@ export default function Pricing() {
                     style={{ 
                       fontSize: '3.5rem', 
                       fontWeight: '700', 
-                      color: '#343F52',
+                      color: '#1c2539',
                       lineHeight: '1'
                     }}
                   >
@@ -116,7 +116,7 @@ export default function Pricing() {
                 {/* Plan Name */}
                 <h4 
                   className="text-center mb-4"
-                  style={{ fontSize: '1.5rem', fontWeight: '700', color: '#343F52' }}
+                  style={{ fontSize: '1.5rem', fontWeight: '700', color: '#1c2539' }}
                 >
                   {plan.name}
                 </h4>
@@ -138,9 +138,9 @@ export default function Pricing() {
                         <path d="M6 10l3 3 5-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
                       </svg>
                       <span style={{ fontSize: '0.95rem', color: '#6c757d', lineHeight: '1.6' }}>
-                        <strong style={{ color: '#343F52' }}>{feature.label}</strong>{' '}
+                        <strong style={{ color: '#1c2539' }}>{feature.label}</strong>{' '}
                         {feature.text === 'Reports' ? (
-                          <strong style={{ color: '#343F52' }}>{feature.text}</strong>
+                          <strong style={{ color: '#1c2539' }}>{feature.text}</strong>
                         ) : (
                           feature.text
                         )}
@@ -153,7 +153,7 @@ export default function Pricing() {
                 <button 
                   className="btn w-100 mt-auto"
                   style={{
-                    backgroundColor: '#343F52',
+                    backgroundColor: '#1c2539',
                     color: 'white',
                     padding: '12px 24px',
                     fontSize: '0.95rem',

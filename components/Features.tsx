@@ -41,7 +41,7 @@ export default function Features() {
             <div className="features-images-wrapper">
               {/* Top Large Image */}
               <div 
-                className="mb-3"
+                className="mb-3 position-relative"
                 data-aos="fade-right"
                 style={{
                   width: '100%',
@@ -54,6 +54,10 @@ export default function Features() {
                   overflow: 'hidden'
                 }}
               >
+                {/* Image Size Indicator */}
+                <div className="position-absolute top-0 start-0 p-2" style={{ backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', borderRadius: '0 0 8px 0', zIndex: 10, fontSize: '0.75rem', fontWeight: '600' }}>
+                  Image: 540px × 300px
+                </div>
                 <div className="text-center text-muted p-4">
                   <p className="mb-0">Large Image</p>
                   <small>Image will be added here</small>
@@ -64,6 +68,7 @@ export default function Features() {
               <div className="row g-3">
                 <div className="col-6">
                   <div 
+                    className="position-relative"
                     data-aos="fade-right"
                     data-aos-delay="100"
                     style={{
@@ -77,6 +82,10 @@ export default function Features() {
                       overflow: 'hidden'
                     }}
                   >
+                    {/* Image Size Indicator */}
+                    <div className="position-absolute top-0 start-0 p-2" style={{ backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', borderRadius: '0 0 8px 0', zIndex: 10, fontSize: '0.7rem', fontWeight: '600' }}>
+                      Image: 255px × 200px
+                    </div>
                     <div className="text-center text-muted p-3">
                       <p className="mb-0" style={{ fontSize: '0.875rem' }}>Small Image 1</p>
                     </div>
@@ -84,6 +93,7 @@ export default function Features() {
                 </div>
                 <div className="col-6">
                   <div 
+                    className="position-relative"
                     data-aos="fade-right"
                     data-aos-delay="200"
                     style={{
@@ -97,6 +107,10 @@ export default function Features() {
                       overflow: 'hidden'
                     }}
                   >
+                    {/* Image Size Indicator */}
+                    <div className="position-absolute top-0 start-0 p-2" style={{ backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', borderRadius: '0 0 8px 0', zIndex: 10, fontSize: '0.7rem', fontWeight: '600' }}>
+                      Image: 255px × 200px
+                    </div>
                     <div className="text-center text-muted p-3">
                       <p className="mb-0" style={{ fontSize: '0.875rem' }}>Small Image 2</p>
                     </div>
@@ -123,7 +137,7 @@ export default function Features() {
                 className="mb-5"
                 data-aos="fade-up"
                 data-aos-delay="100"
-                style={{ fontSize: '2.5rem', fontWeight: '700', color: '#343F52', lineHeight: '1.3' }}
+                style={{ fontSize: '2.5rem', fontWeight: '700', color: '#1c2539', lineHeight: '1.3' }}
               >
                 We bring{' '}
                 <span className="text-decoration-underline" style={{ textDecorationColor: '#ff6b35', textDecorationThickness: '3px', textUnderlineOffset: '8px' }}>
@@ -145,7 +159,7 @@ export default function Features() {
                       <div className="feature-item">
                         <h4 
                           className="mb-2"
-                          style={{ fontSize: '1.25rem', fontWeight: '700', color: '#343F52' }}
+                          style={{ fontSize: '1.25rem', fontWeight: '700', color: '#1c2539' }}
                         >
                           {feature.title}
                         </h4>

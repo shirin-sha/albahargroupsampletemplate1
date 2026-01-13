@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { FiChevronDown } from 'react-icons/fi';
 
 export default function Header() {
@@ -10,18 +12,20 @@ export default function Header() {
     <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
       <div className="container">
         {/* Logo */}
-        <a className="navbar-brand d-flex align-items-center" href="#" style={{ fontSize: '1.5rem', fontWeight: '600', color: '#212529' }}>
-          Sandb
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ margin: '0 4px', verticalAlign: 'middle' }}>
-            {/* Hexagon */}
-            <path d="M12 2L18 5.5V10.5L12 14L6 10.5V5.5L12 2Z" stroke="#212529" strokeWidth="1.5" fill="none"/>
-            {/* Three vertical bars */}
-            <rect x="9" y="7" width="1.5" height="4" fill="#212529"/>
-            <rect x="11.25" y="6" width="1.5" height="6" fill="#212529"/>
-            <rect x="13.5" y="8" width="1.5" height="3" fill="#212529"/>
-          </svg>
-          x
-        </a>
+        <Link href="/" className="navbar-brand position-relative">
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={120}
+            height={40}
+            className="d-inline-block align-top"
+            priority
+          />
+          {/* Image Size Indicator */}
+          <div className="position-absolute" style={{ bottom: '-20px', left: '0', backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', padding: '2px 6px', borderRadius: '4px', fontSize: '0.65rem', fontWeight: '600', whiteSpace: 'nowrap', zIndex: 10 }}>
+            120×40px
+          </div>
+        </Link>
 
         {/* Mobile Toggle */}
         <button
@@ -38,65 +42,52 @@ export default function Header() {
         {/* Navigation Menu */}
         <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav mx-auto">
+            <li className="nav-item">
+              <Link className="nav-link" href="/">HOME</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" href="/about-us">ABOUT US</Link>
+            </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
-                Demos
+                BUSINESSES
                 <FiChevronDown className="ms-1" size={14} />
               </a>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Demo I</a></li>
-                <li><a className="dropdown-item" href="#">Demo II</a></li>
-                <li><a className="dropdown-item" href="#">Demo III</a></li>
+                <li><a className="dropdown-item" href="/businesses/consumer-goods">CONSUMER GOODS</a></li>
+                <li><a className="dropdown-item" href="/businesses/consumer-electronics">CONSUMER ELECTRONICS</a></li>
+                <li><a className="dropdown-item" href="/businesses/home-automation">HOME AUTOMATION</a></li>
+                <li><a className="dropdown-item" href="/businesses/enterprise-technology">ENTERPRISE TECHNOLOGY</a></li>
+                <li><a className="dropdown-item" href="/businesses/shipping">SHIPPING</a></li>
+                <li><a className="dropdown-item" href="/businesses/travel-tourism">TRAVEL & TOURISM</a></li>
               </ul>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
-                Pages
+                CAPABILITIES
                 <FiChevronDown className="ms-1" size={14} />
               </a>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Services</a></li>
-                <li><a className="dropdown-item" href="#">About</a></li>
-                <li><a className="dropdown-item" href="#">Shop</a></li>
-                <li><a className="dropdown-item" href="#">Contact</a></li>
+                <li><a className="dropdown-item" href="/capabilities/human-capital">HUMAN CAPITAL</a></li>
+                <li><a className="dropdown-item" href="/capabilities/knowledge-capital">KNOWLEDGE CAPITAL</a></li>
+                <li><a className="dropdown-item" href="/capabilities/business-excellence">BUSINESS EXCELLENCE</a></li>
+                <li><a className="dropdown-item" href="/capabilities/warehouse-logistics">WAREHOUSE & LOGISTICS</a></li>
+                <li><a className="dropdown-item" href="/capabilities/customer-care">CUSTOMER CARE</a></li>
               </ul>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
-                Projects
+                CORPORATE INFO
                 <FiChevronDown className="ms-1" size={14} />
               </a>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Project I</a></li>
-                <li><a className="dropdown-item" href="#">Project II</a></li>
-                <li><a className="dropdown-item" href="#">Single Project</a></li>
-              </ul>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
-                Blog
-                <FiChevronDown className="ms-1" size={14} />
-              </a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Blog without Sidebar</a></li>
-                <li><a className="dropdown-item" href="#">Blog with Sidebar</a></li>
-                <li><a className="dropdown-item" href="#">Blog Posts</a></li>
-              </ul>
-            </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown">
-                Blocks
-                <FiChevronDown className="ms-1" size={14} />
-              </a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">About</a></li>
-                <li><a className="dropdown-item" href="#">Blog</a></li>
-                <li><a className="dropdown-item" href="#">Contact</a></li>
-                <li><a className="dropdown-item" href="#">Features</a></li>
+                <li><a className="dropdown-item" href="/corporate-info/news-updates">NEWS & UPDATES</a></li>
+                <li><a className="dropdown-item" href="/corporate-info/careers">CAREERS</a></li>
+                <li><a className="dropdown-item" href="/corporate-info/partnerships">OUR PARTNERSHIPS</a></li>
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Documentation</a>
+              <Link className="nav-link" href="/contact-us">CONTACT US</Link>
             </li>
           </ul>
 
@@ -114,7 +105,7 @@ export default function Header() {
                 <li><a className="dropdown-item" href="#">De</a></li>
               </ul>
             </div>
-            <a href="#contact" className="btn btn-dark rounded-pill px-4">Contact</a>
+            <a href="/contact-us" className="btn btn-dark rounded-pill px-4">Contact</a>
           </div>
         </div>
       </div>
