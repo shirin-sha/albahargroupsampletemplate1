@@ -16,14 +16,14 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt="Logo"
-            width={120}
-            height={40}
+            width={240}
+            height={46}
             className="d-inline-block align-top"
             priority
           />
           {/* Image Size Indicator */}
           <div className="position-absolute" style={{ bottom: '-20px', left: '0', backgroundColor: 'rgba(28, 37, 57, 0.9)', color: 'white', padding: '2px 6px', borderRadius: '4px', fontSize: '0.65rem', fontWeight: '600', whiteSpace: 'nowrap', zIndex: 10 }}>
-            120×40px
+            250×46px
           </div>
         </Link>
 
