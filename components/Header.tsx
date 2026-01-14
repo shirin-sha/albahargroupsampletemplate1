@@ -14,7 +14,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="#" className="navbar-brand position-relative" style={{ marginRight: '1.5rem' }}>
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="Logo"
             width={240}
             height={46}
