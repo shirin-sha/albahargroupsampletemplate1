@@ -26,7 +26,7 @@ const processSteps = [
     title: 'Integrated Operations',
     description: 'Shared logistics, excellence and customer care support every business vertical.',
     icon: <FiBarChart size={32} />,
-    image: '/process-02.jpg',
+    image: '/process-2.jpg',
     details: {
       content: 'Our businesses are supported by strong group capabilities—Business Excellence, Warehouse & Logistics, Human Capital, Knowledge Capital and Customer Care—ensuring consistent standards and reliable execution across all six verticals.',
       bullets: [
@@ -42,7 +42,7 @@ const processSteps = [
     title: 'Long-Term Partnership',
     description: 'We focus on sustainable, win-win growth with brands, customers and communities.',
     icon: <FiCheckCircle size={32} />,
-    image: '/process-1.jpg',
+    image: '/process-3.jpg',
     details: {
       content: 'From the first agreement, we plan for the long term. We invest in brand building, joint business planning and transparent reporting, creating relationships that grow stronger year after year.',
       bullets: [

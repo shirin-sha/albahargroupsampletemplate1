@@ -4,42 +4,42 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      icon: '🛒',
+      icon: '/icons/Consumer Goods.svg', // Replace with your SVG path
       title: 'Consumer Goods',
       description: 'We represent leading FMCG and household brands, ensuring strong availability and visibility across Kuwait\'s key retail channels.',
       features: ['FMCG Distribution', 'Modern Trade', 'Traditional Trade']
     },
     {
       id: 2,
-      icon: '📱',
+      icon: '/icons/Consumer Electronics.svg', // Replace with your SVG path
       title: 'Consumer Electronics',
       description: 'Home and personal electronics from trusted global innovators, supported by knowledgeable sales teams and reliable after-sales service.',
       features: ['Home Appliances', 'Personal Devices', 'After-Sales Support']
     },
     {
       id: 3,
-      icon: '🏠',
+      icon: '/icons/Home Automation.svg', // Replace with your SVG path
       title: 'Home Automation',
       description: 'Smart home solutions that enhance comfort, security and energy efficiency in modern Kuwaiti homes and developments.',
       features: ['Smart Living', 'Security Solutions', 'Energy Management']
     },
     {
       id: 4,
-      icon: '💻',
+      icon: '/icons/Enterprise Technology.svg', // Replace with your SVG path
       title: 'Enterprise Technology',
       description: 'Integrated IT, print, imaging and AV solutions that help organisations work smarter, protect information and improve productivity.',
       features: ['IT Solutions', 'Managed Print', 'AV Systems']
     },
     {
       id: 5,
-      icon: '🚢',
+      icon: '/icons/Shipping.svg', // Replace with your SVG path
       title: 'Shipping',
       description: 'Port agency and shipping services connecting Kuwait to major regional and global trade routes, with reliable coordination end-to-end.',
       features: ['Port Agency', 'Cargo Handling', 'Trade Lanes']
     },
     {
       id: 6,
-      icon: '✈️',
+      icon: '/icons/Travel & Tourism.svg', // Replace with your SVG path
       title: 'Travel & Tourism',
       description: 'Corporate, leisure and group travel services that combine global networks with personalised local support.',
       features: ['Corporate Travel', 'Leisure Trips', 'Group Tours']
@@ -81,7 +81,10 @@ const Services = () => {
                   <div className="service-card-inner">
                     <div className="service-header">
                       <div className="service-icon">
-                        {service.icon}
+                        <img 
+                          src={service.icon} 
+                          alt={service.title}
+                        />
                       </div>
                       <div className="service-content">
                         <h4 className="service-title">
